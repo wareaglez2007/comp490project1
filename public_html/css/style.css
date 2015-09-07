@@ -1,0 +1,104 @@
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 6, 2015, 7:31:53 PM
+    Author     : sahakian
+*/
+
+body{
+    background-color: #E1E1E1;
+
+}
+.navigation{
+    background-color: #F1F1F1;
+    
+}
+.navigation ul{
+    width: 100%;
+    float: left;  
+    padding: 0;
+    margin-left: 0;
+    
+    font: bold 12px Verdana, sans-serif;
+   
+
+}
+.navigation ul li{
+    list-style: none;
+    margin: 0;
+    float: left;
+  border-bottom: 1px solid #778;
+}
+
+.navigation ul li a{
+    padding: 7px 0.5em;
+    margin-left: 5px;
+    border: 1px solid #778;
+    border-bottom: none;
+    background-color: #F1F1F3;
+    text-decoration: none;
+    display: block;
+    width: 7em;
+    text-align: center;
+    color: #FFF;
+
+}
+.navigation ul li a:link{
+    color: #000;
+}
+.navigation ul li a:visited{
+    color: #000;
+}
+.navigation ul li a:hover{
+    color: #888;
+    background-color: #FFF;
+}
+
+.navigation #active{
+    border-bottom: none !important;
+}
+.content{
+    
+    background-color: #fff;
+    border: 1px solid #778;
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    clear: both;
+    padding: 10px;
+
+}
+.content p{
+        font: 12px Verdana, sans-serif;
+
+}
+.content fieldset{
+    margin-bottom: 1em;
+    border: 1px solid #888;
+    
+}
+.content label{
+    margin-top: .33em;
+    display: block;
+    font: bold 12px Verdana, sans-serif;
+
+}
+.content input[type="text"],input[type="password"],input[type="email"]{
+    display: block;
+    width: 250px;
+    border-radius: 3px;
+    border: 1px solid #888;
+    height: 30px;
+   
+
+}
+.errors{
+    list-style: none;
+    color:  firebrick;
+    font: bold 12px Verdana, sans-serif;
+    
+}
