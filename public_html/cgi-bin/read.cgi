@@ -26,6 +26,8 @@
 echo "X-Cit-160: hello again steve!"
 echo "Content-type: text/html"
 echo ""
+
+	
 echo "<HTML>"
 echo "<HEAD>"
 echo "<link rel="stylesheet" type="text/css" href="../css/style.css">"
@@ -43,15 +45,21 @@ echo "<li id="active"><a href="../signup.php">Sign up</a></li>"
 echo " </ul>"                    
 echo "</div>"
 echo "<div class="content">"                    
-        
-                    
-               
-echo 
 
-if [ "$QUERY_STRING" ];  
-         then 
-	  echo "<P>$QUERY_STRING</P>"
-	    fi
+
+     name="$(echo $QUERY_STRING|cut -d\& -f1|cut -d= -f2)"
+	 email="$(echo $QUERY_STRING|cut -d\& -f2|cut -d= -f2)"
+	 username="$(echo $QUERY_STRING|cut -d\& -f3|cut -d= -f2)"
+     echo "Thank you " $name
+	 echo "<br/>"
+     echo "You have registred weith us under" $username
+     echo "."	 
+     echo "<br/>"
+	 echo "We will contact you shortly via your registered email address "$email  
+  
+              
+               
+
 
 
 		echo "</div>"
